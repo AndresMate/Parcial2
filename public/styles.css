@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    animation: starBackground 20s linear infinite; /* Animación de fondo */
+}
+
+
+h1 {
+    color: #ffe81f;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ffe81f, 0 0 20px #ffe81f; /* Sombra para un efecto de brillo */
+}
+
+button, input {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #333;
+    color: #ffe81f;
+    border: 1px solid #ffe81f;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transición para efectos de hover */
+}
+
+button:hover, input:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #222;
+    box-shadow: 0 0 20px #ffe81f; /* Sombra para la tabla */
+}
+
+th, td {
+    border: 1px solid #ffe81f;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    text-shadow: 0 0 5px #ffe81f; /* Sombra para un efecto de brillo */
+}
+
+tr:nth-child(even) {
+    background-color: #111;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+#message {
+    margin-top: 20px;
+    color: #ffe81f;
+    text-shadow: 0 0 10px #ffe81f; /* Sombra para el mensaje */
+}
+
+/* Animación de destellos */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ffe81f, 0 0 20px #ffe81f; }
+    50% { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000; }
+    100% { text-shadow: 0 0 10px #ffe81f, 0 0 20px #ffe81f; }
+}
+
+h1:hover {
+    animation: glow 1s infinite; /* Efecto de destello al pasar el mouse */
+}

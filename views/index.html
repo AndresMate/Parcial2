@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <script defer src="/scripts.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Star Wars Characters</h1>
+<button id="btnShowAll">Get All Characters</button>
+<input type="text" id="searchId" placeholder="Enter Character ID">
+<button id="btnSearchId">Get Character By ID</button>
+<input type="text" id="searchName" placeholder="Enter Character Name">
+<button id="btnSearchName">Search By Name</button>
+
+<table id="resultTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Height</th>
+        <th>Gender</th>
+        <td>Homeworld</td>
+        <td>Species</td>
+    </tr>
+    </thead>
+    <tbody id="results"></tbody>
+</table>
+<p id="message"></p>
+</body>
+</html>
